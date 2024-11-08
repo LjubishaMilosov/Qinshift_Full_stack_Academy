@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Forms</title>
+</head>
+<body>
+    
+<h1>Forms Class</h1>
+<!-- FORM -Example 1 -->
+<!-- In action -> -->
+ <!-- In method -> -->
+<form action="" method="">
+<!-- Form fields go here -->
+
+<label for="user_name">Enter Username</label>
+<input type="text" placeholder="Enter Username" id="user_name"/>
+<br />
+
+<label for="pwdInput">Enter password: </label>
+<input type="password" placeholder="Enter password" id="pwdInput"/>
+<br />
+
+<label for="ageInput">Enter age:</label>
+<input type="number" placeholder="Enter age" id="ageInput"/>
+<br />
+
+<input type="submit" value="Login"/>
+
+<button>Login Button</button>
+
+
+</form>
+
+<hr />
+<!-- FORM EXAMPLE 2 -->
+ <form>
+
+<p> What does www stand for?</p>
+
+<label for="weekendweekweek">1. Weekend week week</label>
+<input type="radio" id="weekendweekweek" name="questionOne"/>
+
+<label for="whatwhywho">What why who</label>
+<input type="radio" id="whatwhywho" name="questionOne"/>
+
+<label for="worldwideweb">World wide web</label>
+<input type="radio" id="worldwideweb" name="questionOne"/>
+
+ </form>
+
+ <hr />
+<!-- FORM EXAMPLE 3 -->
+
+<form>
+
+    <label for="birthdate">Enter date of birth</label>
+<input type="date" id="birthdate"/>
+
+<label for="colorPicker">Select your fav color</label>
+<input type="color" id="colorPicker"/>
+
+</form>
+
+<hr />
+<!-- FORM EXAMPLE 4 -->
+
+<form>
+
+<p>Enter desired flavors</p>
+
+<input type="checkbox" id="caramel" value="carmel"/>
+<label for="caramel">Caramel</label>
+
+<input type="checkbox" id="nutela" value="nutela"/>
+<label for="nutela">Nutela</label>
+
+<input type="checkbox" id="blueberry" value="blueberry"/>
+<label for="blueberry">Blueberry</label>
+
+</form>
+
+<!-- FORM EXAMPLE  -->
+
+<form>
+
+    <form>
+        <fieldset>
+            <legend>Thank you for your additional feedback</legend>
+
+            <!-- 'required -> must enter a value' -->
+            <label for="email">Provide email:</label>
+            <input type="text"  placeholder="email" id="email" required/>
+<br/>
+            <label for="comment">Provide comment:</label>
+            <textarea minlength="10" maxlength="100" placeholder="Enter comment here" id="comment" cols="40" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter country of origin</legend>
+
+            <label for="region">Region</label>
+            <select id="region">
+                <!-- Selected means that his optio is preselected -->
+                <option disabled selected>Please select one option</option>
+                <option>Macedonia</option>
+                <option>USA</option>
+                <option>Japan</option>
+                <option>Germany</option>
+            </select>
+        </fieldset>
+
+        <!-- Submitting the form -->
+         <!-- Example 2 -->
+          <!-- <input type="reset" /> -->
+        <button>Submit</button>
+
+<!-- RESETTING THE FORM -->
+ <!-- Example 1 -->
+  <!-- <input type="reset" /> -->
+        <button type="reset">Reset</button>
+    </form>
+
+
+
+
+</body>
+</html>
