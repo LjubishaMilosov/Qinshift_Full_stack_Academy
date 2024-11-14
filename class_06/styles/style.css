@@ -1,0 +1,51 @@
+/* Universal Selector*/
+*{
+    background-color: rgba(199, 192, 192, 0.747);
+}
+
+/* Type Selector */
+
+h2{
+    color: burlywood;
+    background-color:aqua !important
+}
+
+footer{
+    background-color: bisque;
+    color: brown;
+}
+
+/* Class Selector */
+.firstParagraph{
+    color: blueviolet;
+}
+
+/*id Selector*/
+#section-one{
+    background-color: lightblue;
+}
+
+/* Child Selector */
+li>a{
+    color: hsla(120, 100%, 30%, 0.5);
+}
+
+/*descenant selector*/
+nav li{
+    background-color: black;
+}
+
+/* Adjacent Sibling Selector */
+h3+p{
+    background-color: coral;
+}
+
+/* General Sibling Selector*/
+h3~p{
+    background-color: yellowgreen;
+}
+
+h2{
+    
+    background-color:yellow
+}
