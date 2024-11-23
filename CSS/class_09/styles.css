@@ -1,0 +1,67 @@
+.exampleOne {
+    background-color: beige;
+    display: flex;
+/* 
+    This is default value
+    flex-direction: row; */
+    /* flex-direction:row-reverse; */
+
+    /*Justify-content*/
+    /* justify-content:flex-start;
+    justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between;  */
+    /* justify-content: space-around; */
+    /* justify-content:space-evenly; */
+
+    gap: 10px;
+    height: 250px;
+
+    /*ALIGN ITEMS*/
+    /*IMPORTANT : in order to use align-items the container should have positive remaining HEIGHT */
+    /* align-items: flex-start;
+    align-items: flex-end; */
+    align-items: center;
+} 
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+/* Example #2 */
+
+.exampleTwo {
+    background-color: beige;
+    
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 10px;
+    /* Only when we use flex-direction: column, and we want to center the items on the X axis we use justif-content; opposite of flex-direction:row usecase */
+    align-items: center;
+    height: 600px;
+
+    /* Only when we use flex-direction: column, and we want to center the items on the Y axis we use align items; opposite of flex-direction:row usecase */
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+/* Example #2 */
+
+.exampleThree {
+    background-color: beige;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.addSection {
+border: 1px solid red;
+}
+
+.addSection div {
+    border: 1px solid blue

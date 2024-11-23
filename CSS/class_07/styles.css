@@ -1,0 +1,128 @@
+#first_title{
+    background-color: blanchedalmond;
+}
+
+#second_title{
+    border-style: solid;
+    border-color: brown;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+img {
+    width: 150px;
+ 
+}
+
+#first_title{
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.dimensions{
+    width: 60px;
+    height: 60px;
+}
+
+.horizontalAligned { 
+    /*Elements that are INLINe do not follow width & height rules*/
+/*display: inline;*/
+display: inline-block;
+width: 100px;
+height:100px;
+/*INLINE-BLOCK elements follow the width & height rules*/
+}
+
+#boxesWrapper {
+    /*SHORT WAY*/
+    /* border-width; border-style; border-color */
+    border: 1px solid red;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    border: 1px dashed black;
+}
+
+/* 'Margin' is the invisible "RESERVED" space that the elements add on ther outside borders*/
+
+.margin-box {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+/* Padding is the "INVISIBLE" reserved that elements add on their inside borders */
+
+.paddingBox {
+    /*Apply padding on each side*/
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+    /*Apply padding to all sides*/
+    /* padding: 20px; */
+
+    /*Apply padding on each side - short form*/
+
+    /*padding: 20px 15px 10px 20px;*/
+}
+
+/* STANDARD BOX MODEL*/
+#contentBox {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+
+    /*content-box is the default value even if we do not set it */
+    /* koga box-sizing: content-box; - gi dodava vrednostite na padinzite vo celokupnata vrednost  */
+    box-sizing: content-box;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+/* ALTERNATIVE BOX MODEL*/
+#borderBox {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+#overflow {
+    border-style: dotted;
+    border-width: 4px;
+    border-color: black;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    height: 150px;
+
+    /* overflow-y: auto;
+    overflow-x: auto; */
+    overflow: auto;
+}

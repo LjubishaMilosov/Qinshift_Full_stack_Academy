@@ -1,0 +1,103 @@
+/* @font-face {
+    font-family: "Doto";
+    src: url("../fonts/Doto-VariableFont_ROND\,wght.ttf");
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap'); */
+
+
+* {
+    /* font-family: Arial, Helvetica, Verdana, sans-serif; */
+    /* font-family: 'Doto','Times New Roman', Times, serif; */
+    font-family:'Edu+AU+VIC+WA+NT+Pre';
+}
+
+header {
+    background-color: aquamarine;
+}
+
+h1 {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+
+}
+
+
+ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    background-color: antiquewhite;
+    color: aqua;
+}
+
+a:visited {
+    background-color: burlywood;
+    color: cadetblue;
+}
+
+a:focus {
+    background-color: brown;
+}
+
+a:active {
+    background-color: yellow;
+    color: red;
+}
+
+a:hover {
+    text-decoration: dashed underline blue;
+    background-color: crimson;
+    color: white;
+}
+
+section {
+    text-align: center;
+    vertical-align:-top;
+}
+
+p {
+    /* font-size: xx-large; */
+    font-size: small;
+    word-spacing: 10px;
+    line-height: 20px;
+    
+}
+
+.firstLorem {
+    /* font-weight: bolder; */
+    font-weight: 700; 
+    font-style: oblique 10deg;
+    /* text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-color: crimson; */
+
+    text-decoration: dotted underline crimson;
+    letter-spacing: 10px;
+
+    text-shadow: 1px 1px 10px blue;
+}
+
+.secondparagraph::first-letter {
+    font-size: large;
+    color: rgb(113, 21, 21);
+}
+
+.secondparagraph::first-line {
+   text-decoration: underline dotted blueviolet
+}
+
