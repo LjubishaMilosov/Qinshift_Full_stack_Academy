@@ -8,9 +8,10 @@
 
 
 * {
-    /* font-family: Arial, Helvetica, Verdana, sans-serif; */
+    font-family: Arial, Helvetica, Verdana, sans-serif;
     /* font-family: 'Doto','Times New Roman', Times, serif; */
-    font-family:'Edu+AU+VIC+WA+NT+Pre';
+    /* font-family:'Edu+AU+VIC+WA+NT+Pre'; */
+    box-sizing: border-box;
 }
 
 header {
@@ -42,7 +43,7 @@ a {
 
 a:link {
     background-color: antiquewhite;
-    color: aqua;
+    color: rgb(7, 165, 165);
 }
 
 a:visited {
@@ -66,13 +67,13 @@ a:hover {
 }
 
 section {
-    text-align: center;
+    /* text-align: center; */
     vertical-align:-top;
 }
 
 p {
     /* font-size: xx-large; */
-    font-size: small;
+    font-size: medium;
     word-spacing: 10px;
     line-height: 20px;
     
@@ -90,6 +91,9 @@ p {
     letter-spacing: 10px;
 
     text-shadow: 1px 1px 10px blue;
+
+    /* float: right*/
+    float: right; 
 }
 
 .secondparagraph::first-letter {
@@ -101,3 +105,63 @@ p {
    text-decoration: underline dotted blueviolet
 }
 
+/*POSITION: */
+
+section {
+    position: static;
+    background-color: whitesmoke;
+    border:2px dashed rgb(194, 166, 166);
+    margin: 60px 0px;
+    padding: 20px 50px;
+
+}
+
+span {
+    display: inline-block;
+    border: 2px solid lightcoral;
+    padding: 20px;
+}
+
+.relative {
+    position: relative;
+    left: 200px; /*can move only within reserved space(left & right*/
+    
+}
+/* position: absolute */
+.absolute-parent {
+    position:relative;
+    padding: 80px 50px;;
+}
+
+.absolute-child {
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+/* position: fixed */
+.fixed {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    background-color: coral;
+    z-index: 998;
+}
+
+/* position: sticky */
+
+.sticky h2 {
+    position: sticky;
+    background-color: aquamarine;
+    padding: 20px;
+    top: 0px;
+}
+
+/* float: */
+.item {
+    float: left;
+    /* float:right; */
+    padding-left: 10px;
+}

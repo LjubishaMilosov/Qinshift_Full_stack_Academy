@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>Fonts Positioning Hyperlinks</h1>
         <nav>
             <ul>
@@ -23,26 +23,35 @@
     </header>
     <main>
         <section>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste hic ab deserunt ad quidem perferendis quas est, illo autem culpa dolor nesciunt cupiditate natus odio dolores neque nulla sint!
+            <span class="relative">
+                Position: relative(relative within the element)
+            </span>
+        </section>
+        <section class="absolute-parent">
+            <span class="absolute-child">
+                Position: absolute(absolute positioning in relation to relative parent)
             </span>
         </section>
         <section>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste hic ab deserunt ad quidem perferendis quas est, illo autem culpa dolor nesciunt cupiditate natus odio dolores neque nulla sint!
+            <span class="fixed"><a href="#top"> Position: fixed(has fixed position as we scroll)</a>
             </span>
         </section>
-        <section>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste hic ab deserunt ad quidem perferendis quas est, illo autem culpa dolor nesciunt cupiditate natus odio dolores neque nulla sint!
-            </span>
-        </section>
-        <section>
+        <section class="sticky">
+            <h2>Position: Sticky 1</h2>
             <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste hic ab deserunt ad quidem perferendis quas est, illo autem culpa dolor nesciunt cupiditate natus odio dolores neque nulla sint!
             </span>
             <p><span class="firstLorem">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.</p>
-            <p class="secondparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.</p>
+            <p class="secondparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.</p>
+            <h2>Position: Sticky 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolor, harum beatae placeat quia labore et animi quasi illo cum ad magni, praesentium nobis laudantium, enim reiciendis dolores architecto. Sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolor, harum beatae placeat quia labore et animi quasi illo cum ad magni, praesentium nobis laudantium, enim reiciendis dolores architecto. Sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet et aliquid corrupti, officiis minus quam molestiae delectus aspernatur cumque tempore molestias cupiditate consequatur magnam ipsam aliquam ratione quibusdam dolores.</p>
+        </section>
+        <section>
+            <div class="item">Item1</div>
+            <div class="item">Item2</div>
+            <div class="item">Item3</div>
+            <div class="item">Item4</div>
         </section>
         
     </main>
