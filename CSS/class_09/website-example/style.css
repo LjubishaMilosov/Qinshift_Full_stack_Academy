@@ -1,0 +1,70 @@
+header {
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.navigation {
+    
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.navigation li {
+    cursor: pointer;
+}
+
+.mainSection {
+    border: 1px solid red;
+    display: flex;
+    padding: 80px 20px;
+    justify-content: space-around;
+
+}
+
+.plantImage {
+    background-image :url('https://www.ikea.com/global/assets/range-categorisation/images/plants-flowers-pp003.jpeg');
+    width: 180px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.description {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.description h3 {
+    font-size: 30px;
+    color: #114388;
+
+}
+
+.description p {
+    color: #98A3AE;
+}
+
+.explore {
+    background-color: #074DA4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.learnMore {
+    background-color: #e8e9ed;
+    color: #114380;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}

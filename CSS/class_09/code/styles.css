@@ -1,6 +1,6 @@
-.exampleOne {
+/* .exampleOne {
     background-color: beige;
-    display: flex;
+    display: flex; */
     /*ELEMENT WITH display:flex; property IS CALLED FLEX CONTAINER*/
     /*DIRECT CHILDREN OF FLEX CONTAINER ARE CALLED FLEX ITEMS*/
 /* 
@@ -12,7 +12,7 @@
     /*Justify-content -POSITIONS THE FLEX ITEMS*/
     /*justify-content: space-between;*/
     /*justify-content: space-around;*/
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* justify-content: space-between; */
     /* flex-wrap:wrap; */
     /* justify-content:flex-start;
@@ -23,23 +23,36 @@
     /* justify-content:space-evenly; */
 
     /*GAP -LEAVES SPACE BETWEEN FLEX ITEMS*/
-    gap: 10px;
-    height: 250px;
+    /* gap: 10px;
+    height: 250px; */
 
 
     /*ALIGN ITEMS*/
     /*IMPORTANT : in order to use align-items the container should have positive remaining HEIGHT */
     /* align-items: flex-start; */ /*aligns them to the TOP*/
     /* align-items: flex-end; */        /* aligns them to the BOTTOM */
-    align-items: center;                /* aligns them to the CENTER */
-} 
+    /* align-items: center;                aligns them to the CENTER */
+/* }  */
 
-.box {
+/* .box {
     height: 100px;
     width: 100px;
     background-color: cadetblue;
     border: 1px solid black;
-}
+} */
+
+.exampleOne {
+    background-color: beige;
+    display: flex;
+    gap: 10px; /* Optional: Adds spacing between boxes */
+  }
+  
+  .box {
+    flex-grow: 1; /* Each box takes up an equal share of the container's remaining space */
+    height: 100px; /* Maintains the defined height */
+    background-color: cadetblue;
+    border: 1px solid black;
+  }
 
 /* Example #2 */
 
