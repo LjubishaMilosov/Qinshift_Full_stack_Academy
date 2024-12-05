@@ -1,0 +1,108 @@
+#welcomingMessage {
+    color: brown;
+    text-shadow: 1px 2px 3px black;
+}
+
+/*this media querry rule will be applied when the screen is lower than 700px*/
+@media screen and (max-width: 700px) {
+
+    #welcomingMessage {
+        color: plum;
+        text-shadow: none;
+
+        text-transform: capitalize;
+    }
+}
+
+#myBox {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+}
+
+@media screen and (min-width:700px) {
+    #myBox {
+        width: 300px;
+        height: 300px;
+    }
+
+    #welcomingMessage {
+        font-style: italic;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:801px) {
+    #welcomingMessage {
+        display: none;
+    }
+}
+
+    /* REAL LIFE EXAMPLE */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    Header {
+        border-bottom: 2px solid #f4f4f4;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #navList {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+
+    #navList li {
+        cursor: pointer;
+    }
+
+    #navList li:hover {
+        color: yellowgreen;
+    }
+
+    #container {
+        border: 1px solid red;
+        height: 100vh;
+        padding: 0px 20px;
+
+        display: grid;
+        margin-top: 20px;
+
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+    }
+
+    @media screen and (max-width:550px){
+        header{
+            flex-direction: column;
+        }
+        #navList {
+            flex-direction: column;
+        }
+        #navList li {
+            background-color: #7daaab;
+            padding: 10px;
+            text-align: center;
+        }
+        #container {
+            grid-template-columns: unset;
+            grid-template-rows: 20% 20%;
+
+        }
+
+        #container aside {
+            margin-bottom: 20px;
+        }
+    }
+
+  
+
+    #container aside {
+
+    }
