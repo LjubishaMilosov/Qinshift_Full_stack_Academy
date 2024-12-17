@@ -35,4 +35,22 @@
   let smallerArray = studentsG6[4];
   console.log(smallerArray);
   console.log(smallerArray[0]);
- 
+
+  // Some methods when working with array
+  // "push" adds one or multiple items at the END of the array
+  studentsG6.push("Krasimir");
+  console.log(studentsG6);
+
+  // "unshift" dds one or multiple items at the BEGINNING of the array
+  studentsG6.unshift("Sanja");
+  console.log(studentsG6);
+
+  // "pop" removes one item from the END of the array and returns it
+ let deletedMember = studentsG6.pop();
+ console.log(deletedMember);
+ console.log(studentsG6);
+
+ // "shift" removes one item from the BEGINING of the array and returns it
+ let deletedMemberFromBegining = studentsG6.shift();
+ console.log(deletedMemberFromBegining);
+ console.log(studentsG6);
