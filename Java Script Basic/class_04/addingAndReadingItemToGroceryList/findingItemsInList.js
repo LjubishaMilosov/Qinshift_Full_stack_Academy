@@ -1,6 +1,6 @@
 groceries = ["Bread", "Milk", "Butter", "Salad"];
 
-function chackForItemInGroceryList(item) {
+function checkForItemInGroceryList(item) {
     for(let listItem of groceries) {
         if(listItem === item) { // check the inputed item
             console.log(`The item ${item} was found`);
@@ -12,4 +12,4 @@ function chackForItemInGroceryList(item) {
     
 }
 
-let Searcheditem = chackForItemInGroceryList("Beer");
+let Searcheditem = checkForItemInGroceryList("Beer");
