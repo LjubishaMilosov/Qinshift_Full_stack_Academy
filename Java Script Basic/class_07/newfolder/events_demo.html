@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clas_07 Events</title>
+</head>
+
+<body>
+    <header>
+        <h1>Events</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Ways to bind event to an element</h2>
+
+             <!-- 1. HTML event handlers (BAD!) -->
+            <section>
+                <h3>HTML Event handlers</h3>
+
+                <!-- <button onclick="alert('You clicked me!')">
+                    Click me
+                </button> -->
+                <button onclick="alertUser('You clicked me!')">
+                    Click me
+                </button>
+            </section>
+
+             <!-- 2. DOM event handlers (OLD!) -->
+            <section>
+                <h3>DOM Event handlers</h3>
+
+                <button id="dbl-click-btn">
+                    Double Click me
+                </button>
+            </section>
+
+
+        </article>
+    </main>
+
+
+    <script src="events_demo.js"></script>
+</body>
+</html>
