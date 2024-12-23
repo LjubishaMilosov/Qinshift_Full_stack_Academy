@@ -25,7 +25,7 @@ footer.innerHTML = `<p>Learn how manipulate the DOM &copy 2024</p>
                     <p>Thanks for reading</p>`;
 
 footer.innerHTML += `
-<p>Yet another <b>paagraph</p>`;
+<p>Yet another <b/>paragraph</p>`;
 
 
 //Task : Get student names from user input(prompt) 
