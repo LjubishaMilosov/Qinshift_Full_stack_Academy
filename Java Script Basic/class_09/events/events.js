@@ -7,11 +7,11 @@ jQuery(function() {
         console.log("Hello from the first click event listener!");
     });
 
-    // Second way
+   // Second way
     button.click(function() {
         let paragraphs = $("p");
         paragraphs.hide();
-
+      
 //$(this) -> represent the target element of the event as JQuery element
 // this -> button
 $(this).text("Click Me");
@@ -19,4 +19,4 @@ $(this).text("Click Me");
     });
 
 
-    });
+});
