@@ -1,0 +1,39 @@
+{
+    "model" : "Astra",
+    "brand" : "Opel",
+    "year" : 2010,
+    "hasSunRoof" : false,
+    "drivers" : ["Ljubisha", "Ana", "Jovan"],
+    "color" : "black",
+    "price" : 5000,
+    "engine" : {
+        "type" : "diesel",
+        "volume" : 1.7
+    },
+    "owners" : [
+        {
+            "name" : "John",
+            "surname" : "Doe",
+            "age" : 30
+        },
+        {
+            "name" : "Jane",
+            "surname" : "Doe",
+            "age" : 25
+        }
+    ],
+    "service" : {
+        "lastService" : "2020-01-01",
+        "nextService" : "2020-07-01"
+    },
+    "features" : [
+        "air conditioning",
+        "power steering",
+        "electric windows"
+    ],
+    "images" : [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg"
+    ]
+}
