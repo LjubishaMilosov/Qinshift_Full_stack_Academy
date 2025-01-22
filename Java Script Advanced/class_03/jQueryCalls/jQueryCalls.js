@@ -6,7 +6,10 @@ $(document).ready(function () {
         debugger;
         console.log(response);
         //response JSON _> js object
-        let parsedObject = JSON.parse(response);
+
+        // we don't have explicit content type(it is text/plain, not application/json)
+        // the content we get is json so we need to parse it ourselves
+        let parsedObject = JSON.parse(response); //response json -> js object
         console.log(parsedObject);
         for (let student of parsedObject.students) {
           $("#students").append(`<li>${student}</li>`);
@@ -25,6 +28,7 @@ $("#getAstrosBtn").click(function () {
     url: "http://api.open-notify.org/astros.json",
     success: function (response) {
         debugger
+        // we have explicit content type -> application/json (DevTools->Network tab->Response Headers->content type)
       console.log(response);
       for(let astro of response.people){
         $("#students").append(`<li>${astro.name}</li>`)
