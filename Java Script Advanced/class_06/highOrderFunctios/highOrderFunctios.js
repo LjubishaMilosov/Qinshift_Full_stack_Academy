@@ -122,9 +122,9 @@ function aggregate(currentSum, grade){
 }
 
 // reduce has two parts
-// - function
+// - a function
 // - an initial value
-// the function(first param) takes the initial value as first param and each...
+// the function(first param) takes the initial value as first param and each array member as a second param
 console.log(studentsAverageGrade.reduce(aggregate,0));
 
 let sum = students.filter(s => s.averageGrade > 1)
@@ -132,6 +132,55 @@ let sum = students.filter(s => s.averageGrade > 1)
 .reduce(aggregate, 5);
 
 console.log(sum);
+
+console.log("=================================================================");
+
+numbers = [2,3,4,7,1,5,19];
+
+let concatenate = function(currentResult, currentValue){
+    //debugger
+    return currentResult+=currentValue;
+}
+
+let zbir = numbers.reduce(concatenate, 0);
+console.log(zbir);
+
+let concatenatedNumbers = numbers.reduce(concatenate, "");
+console.log(concatenatedNumbers);
+
+
+console.log("==============SORT======================");
+// SORT CHANGES THE ORIGINAL ARRAY
+
+// < 0 -> a.averageGrade(the first element in a-b) should be in the position with lower index
+// = 0 -> the elements have the same value, nothing changes
+// > 0 b.averaeGrade(the second element in a-b) should be in the position with lower index
+
+// students.sort((a, b) => a.averageGrade - b.averageGrade); //asc
+// console.log(students);
+
+students.sort((a, b) => b.averageGrade - a.averageGrade); //desc
+console.log(students);
+
+console.log("==========================================");
+
+//let copy = students; // pass by reference, each chnge in copy will change the original students array
+
+function copyArray(array){
+    let copiedArray = [];
+    array.forEach(item => copiedArray.push(item))
+    return copiedArray;
+}
+
+let copy = copyArray(students);
+console.log(copy);
+
+ copy.sort((c1, c2) => c1.averageGrade - c2.averageGrade);
+ console.log("copy");
+ console.log(copy);
+ 
+ console.log("students");
+ console.log(students);
 
 
 
