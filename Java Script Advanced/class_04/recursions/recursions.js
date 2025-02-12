@@ -1,5 +1,5 @@
 function sum(num1, num2){
-    return num1 +num2;
+    return num1 + num2;
 }
 
 // sum(sum(sum(sum(1,2),3),4),5);

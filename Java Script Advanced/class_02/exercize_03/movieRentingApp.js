@@ -20,7 +20,39 @@ searchBtn.addEventListener("click", function(){
         return;
     }
 
-    let movieFound = searchMovies(searchInput.value);
+    // let movieFound = searchMovies(searchInput.value);
+
+    // if(movieFound){
+    //     result.innerText = "The movie can be rented."
+    //     result.style.color = "green";
+    // } else {
+    //     result.innerText = "The movie can not be rented."
+    //     result.style.color = "red";
+    // }
+    searchMovies(searchInput.value);
+})
+
+
+// function searchMovies(searchText){
+//     for(let movie of movies){
+//         // if(movie.toUpperCase() == searchText.toUpperCase())
+//         if(movie.toLowerCase() == searchText.toLowerCase()){
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+function searchMovies(searchText){
+    let movieFound = false; //default value of the flag
+    for(let movie of movies){
+        // if(movie.toUpperCase() == searchText.toUpperCase())
+        if(movie.toLowerCase() == searchText.toLowerCase()){
+            movieFound = true;  // flag becomes true
+            break;
+        }
+    }
+    
 
     if(movieFound){
         result.innerText = "The movie can be rented."
@@ -29,36 +61,6 @@ searchBtn.addEventListener("click", function(){
         result.innerText = "The movie can not be rented."
         result.style.color = "red";
     }
-})
-
-
-function searchMovies(searchText){
-    for(let movie of movies){
-        // if(movie.toUpperCase() == searchText.toUpperCase())
-        if(movie.toLowerCase() == searchText.toLowerCase()){
-            return true;
-        }
-    }
-    return false;
+    return;
 }
-
-// function searchMovies(searchText){
-//     let movieFound = false; //default value of the flag
-//     for(let movie of movies){
-//         // if(movie.toUpperCase() == searchText.toUpperCase())
-//         if(movie.toLowerCase() == searchText.toLowerCase()){
-//             movieFound = true;  // flag becomes true
-//             break;
-//         }
-//     }
-    
-
-//     if(movieFound){
-//         result.innerText = "The movie can be rented."
-//         result.style.color = "green";
-//     } else {
-//         result.innerText = "The movie can not be rented."
-//         result.style.color = "red";
-//     }
-// }
 

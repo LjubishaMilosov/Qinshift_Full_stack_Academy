@@ -20,3 +20,5 @@ function cleanFromFalsy(array){
 }
 
 cleanFromFalsy(mixedArray);
+
+

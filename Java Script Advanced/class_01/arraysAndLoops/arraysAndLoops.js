@@ -1,4 +1,4 @@
-// while
+ // while
 
 console.log("=============WHILE=================");
 

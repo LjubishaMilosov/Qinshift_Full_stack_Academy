@@ -14,7 +14,7 @@ btn.addEventListener("click", function(){
         console.log("You must enter a font size");
         return;
     }
-    if(!parseFloat(fontSize.value)){  //parseFloat parses the value toa decimal number
+    if(!parseFloat(fontSize.value)){  //parseFloat parses the value toa decimal number/Converts a string to a floating-point number.
         console.log("You must enter a number or font size");
         return
     }

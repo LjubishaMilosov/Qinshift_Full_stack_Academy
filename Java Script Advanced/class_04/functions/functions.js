@@ -17,7 +17,7 @@ function printPersonalDetails(firstName, lastName, age, address = "Unknown"){
     let personFullName = getFullName(firstName, lastName); // we can a function inside a function
     console.log(`${personFullName} lives on address ${address}`);
 
-    return `The age of ${firstName} is ${age} and this person lives on ${address}`
+    return `The age of ${personFullName} is ${age} and this person lives on ${address}`
     console.log("This code will not be executed. It is unreachable");  //unreachable code
     
     
