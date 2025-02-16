@@ -31,3 +31,16 @@ function Vehicle(id, name, seriesNum, price) {
   let wheeledVehicle2 = new WheeledVehicle();
   console.log(wheeledVehicle2);
   
+  let wheeledVehicle3 = new WheeledVehicle(1, "Mercedes", "11111", 10000, 4);
+  console.log(wheeledVehicle2);
+
+function Car(id, name, seriesNum, price, numberOfWheels, plateNumber){
+  Object.setPrototypeOf(this, new WheeledVehicle(id, name, seriesNum, price, numberOfWheels));
+  this.plateNumber = plateNumber;
+  this.stop = function (){
+    console.log("The car stopped!");
+  }
+}
+
+let car = new Car(2, "Mercedes", "3232", 30000, 4, "SK1234AB");
+console.log(car);
