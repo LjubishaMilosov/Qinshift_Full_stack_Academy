@@ -37,6 +37,7 @@ console.log(bike);
 console.log(bike.numberOfWheels); // 2 -> from bike
 console.log(bike.name); //Opel Corsa -. from wheeled Vehicle
 console.log(bike.price); // 15000 -> from vehicle
+console.log(wheeledVehicle.numberOfWheels);
 
 console.log("=============Prototypes=====================");
 
