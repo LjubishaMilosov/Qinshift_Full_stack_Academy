@@ -49,20 +49,33 @@ class Car extends WheeledVehicle{
     buyCar(money){
         money >= this.price ? console.log("Congrats! You bought a car") : console.log("Yoy're a poor bastard!");
     }
+
+    // belongs to the class, not to the specific object instance
     static addAirConditioning(carObject){
         if(carObject.hasAC){
-            console.log();
+            console.log("The car already has AC");
         } else {
             carObject.hasAC = true;
-            carObject.price == 500;
+            carObject.price += 500;
         }
     }
+    static print(){
+        console.log("Hello from Car class");
+    }
+    static isRentable = false;
+    static numberOfManufacturedCars = 0;
 }
 
 let car = new Car(5,"BMW", "222", 50000, 4, "SK123AB");
 console.log(car);
 
 car.buyCar(20000);
+Car.addAirConditioning(car);
+Car.print();
+
+Car.isRentable = true;
+console.log(Car.isRentable);
+
 
 
 
@@ -71,7 +84,7 @@ car.buyCar(20000);
 class ElectricCar extends Car{
     constructor(id, name, seriesNum, price, numberOfWheels, plateNumber, hasAC, owner, numOfDoors){
         super(id, name, seriesNum, price, numberOfWheels, plateNumber, hasAC);
-        this.owner = owner; // this will call the etter
+        this.owner = owner; // this will call the setter
         this.numOfDoors = numOfDoors;
     }
     get owner(){
